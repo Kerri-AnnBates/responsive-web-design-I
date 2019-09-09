@@ -58,15 +58,17 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     /* TB LR */
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 /* header */
 
 header {
     display: flex;
+    justify-content: space-between;
 }
 
 header nav {
@@ -153,6 +155,7 @@ header .logo {
 
 .main-content .middle-img {
     margin-top: 45px;
+    width: 100%;
 }
 
 .main-content .bottom-content {
@@ -247,6 +250,13 @@ footer {
         flex-direction: column-reverse;
         align-items: center;
     }
+    header nav {
+        max-width: 500px;
+        width: 100%;
+    }
+    header nav a {
+        margin: 0 20px;
+    }
     .cta img {
         display: none;
     }
@@ -255,7 +265,7 @@ footer {
 /* Mobile view */
 
 @media screen and (max-width: 500px) {
-    header nav{
+    header nav {
         border-top: 1px solid #000;
     }
     header nav a {
@@ -271,7 +281,7 @@ footer {
     }
     .main-content .bottom-content .text-content, .main-content .top-content .text-content {
         margin: 20px 0;
-        width: 400px;
+        width: 100%;
     }
     .bottom-content {
         flex-direction: column;
