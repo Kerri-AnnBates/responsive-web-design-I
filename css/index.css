@@ -240,9 +240,18 @@ footer {
     font-size: 14px;
 }
 
-@media screen and (max-width: 480px) {
-    .offered-services {
-        flex-direction: column;
+/* Tablet view */
+
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column-reverse;
         align-items: center;
     }
+    .cta img {
+        display: none;
+    }
 }
+
+/* Mobile view */
+
+@media screen and (max-width: 500px) {}
