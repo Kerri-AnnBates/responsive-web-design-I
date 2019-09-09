@@ -260,6 +260,12 @@ footer {
     .cta img {
         display: none;
     }
+    .facts {
+        display: block;
+    }
+    .facts div, .facts img {
+        width: 100%;
+    }
 }
 
 /* Mobile view */
@@ -286,5 +292,11 @@ footer {
     .bottom-content {
         flex-direction: column;
         align-items: center;
+    }
+    .offered-services {
+        flex-direction: column;
+    }
+    .service-container {
+        width: 100%;
     }
 }
